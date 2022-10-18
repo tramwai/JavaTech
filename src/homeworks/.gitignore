@@ -1,0 +1,12 @@
+$ cat .git/ignore
+# ignore objects and archives, anywhere in the tree.
+*.[oa]
+$ cat Documentation/.gitignore
+# ignore generated html files,
+*.html
+# except foo.html which is maintained by hand
+!foo.html
+$ git ls-files --ignored \
+    --exclude='Documentation/*.[0-9]' \
+    --exclude-from=.git/ignore \
+    --exclude-per-directory=.gitignore
