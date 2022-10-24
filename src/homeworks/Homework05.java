@@ -1,5 +1,7 @@
 package homeworks;
 
+import utilities.ScannerHelper;
+
 import java.util.Scanner;
 
 public class Homework05 {
@@ -239,15 +241,21 @@ public class Homework05 {
          User : Jordan
          Program: End of the program
          */
+//
+//        String nameTask10;
+//        do {
+//            System.out.println("Please enter a name");
+//            Scanner scannerTask10 = new Scanner(System.in);
+//            nameTask10 = scannerTask10.nextLine();
+//        }
+//        while(nameTask10.toLowerCase().startsWith("j"));
+//        System.out.println("End of the program");
 
-        String nameTask10;
+        String name;
         do {
-            System.out.println("Please enter a name");
-            Scanner scannerTask10 = new Scanner(System.in);
-            nameTask10 = scannerTask10.nextLine();
-        }
-        while(nameTask10.toLowerCase().startsWith("j"));
-        System.out.println("End of the program");
+            name = ScannerHelper.getAName();
+        }while (name.toLowerCase().charAt(0) != 'j');
+        System.out.println("End of program");
     }
 
 }

@@ -52,4 +52,21 @@ public class ScannerHelper {
         input.nextLine();
         return number;
     }
+
+    // Method that asks user to enter a positive number
+    public static int getAPositiveNumber(){
+
+        System.out.println("Please enter a positive number ");
+        int number = input.nextInt();
+        input.nextLine();
+        return number;
+    }
+
+    // Method that asks user to enter a word
+    public static String getAWord(){
+
+        System.out.println("Please enter a word");
+        String word = input.nextLine();
+        return word;
+    }
 }
