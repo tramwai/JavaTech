@@ -19,7 +19,6 @@ public class Project04 {
         NOTE: First check if the length of String is at least 8, if the String’s length is less than 8,
         then print message “This String does not have 8 characters”
          */
-
         System.out.println("==============Task 1=============");
 
         String strTask1 = ScannerHelper.getAString();
@@ -209,7 +208,6 @@ public class Project04 {
             System.out.println("This sentence has " + wordCount + " words");
         } else System.out.println("This sentence does not have multiple words.");
 
-
         System.out.println("\n==============Task 9=============\n");
         /**
         TASK-9
@@ -269,7 +267,6 @@ public class Project04 {
         Expected output 5:
         This word does not have 1 or more characters
          */
-
         String givenWord = ScannerHelper.getAWord();
         String reversedWord = "";
         if (givenWord.length() >= 1) {
