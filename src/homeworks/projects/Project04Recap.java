@@ -1,7 +1,9 @@
 package homeworks.projects;
 
+import utilities.RandomNumberGenerator;
 import utilities.ScannerHelper;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Project04Recap {
@@ -111,5 +113,82 @@ FooBar
             else System.out.println(i);
 
         }
+
+        System.out.println("Task 8");
+        /**
+        TASK-8
+Write a program that asks user to enter a sentence as a String, and count how many words that sentence has, and print it with given below message.
+NOTE: Write a program that handles any String
+NOTE: First check if the given sentence has 2 words at least. If not, then just print “This sentence does not have multiple words”.
+
+Test data 1:
+Java is fun
+
+Expected output 1:
+This sentence has 3 words.
+
+
+Test data 2:
+Hello World
+
+Expected output 2:
+This sentence has 2 words.
+
+
+Test data 3:
+Hi
+
+Expected output 3:
+This sentence does not have multiple words.
+         */
+        System.out.println("Please enter a sentence");
+        input.nextLine();
+        String s8 = input.nextLine().trim();
+        if (s8.contains(" ")){
+            String[] array8 = s8.split(" ");
+            System.out.println("This sentence has " + array8.length);
+        } else {
+            System.out.println("This sentence does not have multiple words.");
+        }
+
+        System.out.println("Task 7");
+        /**
+        TASK-7
+Write a program that generates 2 random numbers between 0 and 25 (0 and 25 are included), Then print all numbers between 2 random numbers that cannot be divided by 5 in ascending order.
+
+Test data:
+int randomNumber1 = 12;
+int randomNumber1 = 4;
+Expected output:
+4 – 6 – 7 – 8 – 9 – 11 – 12
+         */
+        String ans7 = "";
+        int num7A = RandomNumberGenerator.getARandomNUmber(0, 25);
+        int num7B = RandomNumberGenerator.getARandomNUmber(0, 25);
+        for (int i = Math.min(num7A, num7B); i <= Math.max(num7A,num7B); i++) {
+            if(i % 5 != 0 ) {
+                ans7 += i;
+                if (i + 1 == Math.max(num7A,num7B) && i % 5 != 0) break;
+                else {
+                    ans7 += " - ";
+                }
+            }
+        }
+        System.out.println(num7A);
+        System.out.println(num7B);
+        System.out.println(ans7);
+
+        System.out.println("Task 2");
+        System.out.println("Please enter a sentence");
+        String s2 = input.nextLine();
+        if(s2.contains(" ")){
+            String firstWord = s2.substring(0, s2.indexOf(" "));
+            String lastWord = s2.substring(s2.lastIndexOf(" ") + 1);
+            System.out.println(lastWord +
+                    s2.substring(s2.indexOf(" "), s2.lastIndexOf(" ") + 1) +
+                    firstWord);
+        }else {
+            System.out.println("This sentence does not have 2 or more words to swap");
+        };
     }
 }
