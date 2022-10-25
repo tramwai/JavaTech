@@ -84,6 +84,32 @@ This word does not have 1 or more characters
             if (isPalindrome) System.out.println("This word is a palindrome");
             else System.out.println("This word is not a palindrome");
         }
+        System.out.println("Task 9");
+        /**
+        TASK-9
+Write a program that asks user to enter a positive number.
+Print all the number starting from 1 to given number. But, print “Foo” for the numbers divided by 2, “Bar” for the
+         numbers divided by 3 and “FooBar” for the numbers divided by both 2 and 3.
 
+Test data:
+6
+
+Expected output:
+1
+Foo
+Bar
+Foo
+5
+FooBar
+         */
+        System.out.println("Please enter a positive number");
+        int s9 = input.nextInt();
+        for (int i = 1; i <= s9; i++) {
+            if (i % 6 == 0) System.out.println("FooBar");
+            else if (i % 3 == 0) System.out.println("Bar");
+            else if (i % 2 == 0) System.out.println("Foo");
+            else System.out.println(i);
+
+        }
     }
 }
