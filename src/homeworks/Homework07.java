@@ -151,16 +151,7 @@ public class Homework07 {
         F
         G
          */
-        ArrayList<Character> task7 = new ArrayList<>();
-        task7.add('A');
-        task7.add('x');
-        task7.add('$');
-        task7.add('%');
-        task7.add('9');
-        task7.add('*');
-        task7.add('+');
-        task7.add('F');
-        task7.add('G');
+        ArrayList<Character> task7 = new ArrayList<>(Arrays.asList('A', 'x', '$', '%', '9', '*', '+', 'F', 'G'));
         System.out.println(task7);
         for (Character element : task7){
             System.out.println(element);
