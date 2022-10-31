@@ -1,5 +1,6 @@
 package homeworks.projects;
 
+import javax.swing.plaf.IconUIResource;
 import java.util.Arrays;
 
 public class Project05 {
@@ -24,6 +25,10 @@ public class Project05 {
         System.out.println("\nTest - Task5");
         String[] task5 = {"foo", "bar", "Foo", "bar", "6", "abc", "6", "xyz"};
         findDuplicatedElementsInAnArray(task5);
+
+        System.out.println("\nTest - Task6");
+        String[] task6 = {"pen","eraser","pencil","pen","123","abc","pen","eraser"};
+       findMostRepeatedElementInAnArray(task6);
     }
     /**
      TASK-1 - findGreatestAndSmallestWithSort() method
@@ -148,9 +153,21 @@ public class Project05 {
     Expected output:
     pen
      */
-    public static void findMostRepeatedElementInAnArray(String[] str){
-    // empty string container check it with each element and count them
-        //String = ""; counter = 0; final count container = 0;
-        // 2 nested loops.
+    public static void findMostRepeatedElementInAnArray(String[] array){
+        String result = "";
+        int mostRepeated = 0;
+        for (int i = 0; i < array.length; i++) {
+            int count = 0;
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i].equals(array[j])) {
+                    count++;
+                }
+            }
+            if (count >= mostRepeated){
+                result = array[i];
+                mostRepeated = count;
+            }
+        }
+        System.out.println(result);
     }
 }

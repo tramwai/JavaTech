@@ -220,8 +220,8 @@ public class Homework07 {
         int hasPOrp = 0;
         int startEndPOrp = 0;
         for (String element : task9) {
-
-
+            if (Character.isUpperCase(element.charAt(0))) startUpper++;
+            if (Character.isLowerCase(element.charAt(0))) startLower++;
             if (element.toLowerCase().contains("p")) hasPOrp++;
             if (element.toLowerCase().startsWith("p") || element.toLowerCase().endsWith("p")) startEndPOrp++;
         }
@@ -248,18 +248,7 @@ public class Homework07 {
         Elements that are odd and less than 20 = 4
         Elements that are less than 15 or greater than 50 = 8
          */
-        ArrayList<Integer> task10 = new ArrayList<>();
-        task10.add(3);
-        task10.add(5);
-        task10.add(7);
-        task10.add(10);
-        task10.add(0);
-        task10.add(20);
-        task10.add(17);
-        task10.add(10);
-        task10.add(23);
-        task10.add(56);
-        task10.add(78);
+        ArrayList<Integer> task10 = new ArrayList<>(Arrays.asList(3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78));
         System.out.println(task10);
         int dividedBy10 = 0;
         int evenGreaterThan15 = 0;
