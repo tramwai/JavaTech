@@ -226,7 +226,7 @@ public class Project04 {
         FooBar
          */
         int positiveNum = ScannerHelper.getAPositiveNumber();
-        for (int i = 0; i <= positiveNum; i++) {
+        for (int i = 1; i <= positiveNum; i++) {
             if (i % 2 == 0) {
                 System.out.println("Foo");
             } else if (i % 3 == 0) {

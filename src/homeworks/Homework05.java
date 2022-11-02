@@ -205,18 +205,34 @@ public class Homework05 {
          Expected output 2:
          0 – 1 – 1 – 2 – 3 – 5 - 8
          */
+//        int given = 5;
+//        int first = 0;
+//        int sec = 0;
+//        String answer  = "";
+//        int i = 1;
+//        while (i <= given){
+//            System.out.println(answer);
+//            int sum = first + sec;
+//            first = sec;
+//            sec = sum;
+//
+//            i++;
+//        }
+//        System.out.println(answer);
+
 
         int givenNumber = 5;
         int firstNumber = 0;
         int secondNumber = 1;
-        int sumOf2;
+
         String output = "";
 
         for (int i = 0; i <= givenNumber; i++) {
-            sumOf2 = firstNumber + secondNumber;
+            output += firstNumber + " - ";
+            int sumOf2 = firstNumber + secondNumber;
             firstNumber = secondNumber;
             secondNumber = sumOf2;
-            output += sumOf2 + " - ";
+
         }
         System.out.println(output.substring(0, output.length() - 3));
 
