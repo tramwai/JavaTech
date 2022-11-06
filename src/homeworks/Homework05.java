@@ -9,7 +9,7 @@ public class Homework05 {
         System.out.println("---------Task 1----------");
         /**
          Requirement:
-         Write a program that prints all the numbers that are dividable by 7 starting from 1 to 100 (1 and 100 are included)
+         Write a program that prints all the numbers that are divisible by 7 starting from 1 to 100 (1 and 100 are included)
          NOTE: Result must be in one line with space and dash separators
          Expected Output: 7 – 14 – 21 - 28 . . . 77 - 84 - 91 - 98
          */
@@ -23,7 +23,7 @@ public class Homework05 {
         System.out.println("\n---------Task 2----------");
         /**
          Requirement:
-         Write a program that prints all the numbers that are dividable by both 2 and 3 starting from 1 to 50 (1 and 50 are included)
+         Write a program that prints all the numbers that are divisible by both 2 and 3 starting from 1 to 50 (1 and 50 are included)
          NOTE: Result must be in one line with space and dash separators
          Expected Output:6 – 12 – 18 . . . 36 – 42 - 48
          */

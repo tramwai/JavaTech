@@ -23,5 +23,6 @@ public class Exercise05_RemoveElementsWithIterator {
             if (s.toLowerCase().contains("book")) someObjects.remove();
         }
         System.out.println(objects);
+        
     }
 }
