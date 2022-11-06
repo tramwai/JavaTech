@@ -9,6 +9,7 @@ public class Exercise02_RemoveDuplicates {
         /**
         Assume you have an ArrayList of languages
         Java, JavaScript, Ruby, Go, Ruby, Java, Java
+         remove duplicates
          */
         ArrayList<String> languages = new ArrayList<>(Arrays.asList("Java", "JavaScript", "Ruby", "Go", "Ruby", "Java", "Java"));
 //        ArrayList<String> uniques = new ArrayList<>();

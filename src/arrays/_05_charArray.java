@@ -24,7 +24,7 @@ public class _05_charArray {
         String arrayAsString = Arrays.toString(characters);
         System.out.print(arrayAsString);
 
-        /*
+        /**
 TASK-2
 Print the size of the array with a message
 

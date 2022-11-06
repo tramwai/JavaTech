@@ -4,11 +4,7 @@ import java.util.*;
 
 public class _08_ConvertingAnArrayToArrayList {
     public static void main(String[] args) {
-        /**
-        Create an ArrayList with the cities - > Tokyo, Berlin, Moscow, Denver
-        Create a LinkedList of characters -> A, #, 5, +
-        Create a Vector of numbers -> 1,2,2,7,10
-         */
+
        /**
 Create an ArrayList of cities -> Tokyo, Berlin, Moscow, Denver
 Create a LinkedList of characters -> A, #, 5, +

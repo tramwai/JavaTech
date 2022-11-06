@@ -8,7 +8,7 @@ public class StringMethodPractices {
         System.out.println(StringMethodPractices.isCharExisting("Peter", 'r', 4));
         System.out.println(StringMethodPractices.isCharContained("John", 'o'));
     }
-    /*
+    /**
         Create a public static method named as " isCharExisting " which will take a String , a char and an index
         it will return true if that char exists in that string at the given index
         Example
@@ -18,7 +18,7 @@ public class StringMethodPractices {
     public static boolean isCharExisting(String str, char c, int index ) {
     return str.charAt(index) == c;
     }
-        /*
+        /**
         Create a public static method named isCharContained which will take a String , a char . It will return true if that char exists
          */
     public static boolean isCharContained(String str, char c){

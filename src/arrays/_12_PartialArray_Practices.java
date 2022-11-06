@@ -7,7 +7,7 @@ public class _12_PartialArray_Practices {
         System.out.println(lastFiveElements(numbers));
         System.out.println(lastFiveElements(numbers2));
     }
-    /*
+    /**
     Create a public static method which will take a int array then will get the sum of first 3 elements and return it
     Example:
      Array - > int[] numbers = {10, -3, -7, 0, 0, 7, 22};

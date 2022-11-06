@@ -12,7 +12,7 @@ public class Exercise05_RemoveElementsWithIterator {
                 "Book",
                 "Notebook",
                 "MacBook Pro"));
-        /*
+        /**
         Remove elements that contain "book" - this is case-insensitive
         print the list
         Expected: [Pen, Pencil]
@@ -23,6 +23,6 @@ public class Exercise05_RemoveElementsWithIterator {
             if (s.toLowerCase().contains("book")) someObjects.remove();
         }
         System.out.println(objects);
-        
+
     }
 }

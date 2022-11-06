@@ -17,14 +17,14 @@ public class _14_CountDuplicates {
     }
 
 
-    /*
+    /**
     Create a public static method will take an int array then it will count the duplicates and return it
     int[] numbers = {2, 3, 7, 1, 1, 7, 1};
     return -> 2
      */
 
 
-    /*
+    /**
     create a public static method which will take an int array then it will count the duplicates and return it.
     int[] numbers = {2, 3, 7, 1, 1, 7, 1};
     return -> 2

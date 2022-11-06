@@ -44,9 +44,9 @@ public class _09_Find_Max_Min {
     }
 
     public static void printMaxAndMinWithoutSort(int[] numbers) {
-         /**
+         /*
          Containers -> min, max
-         -loop -> if my current max is smalller than the current number
+         -loop -> if my current max is smaller than the current number
          - print
           */
 

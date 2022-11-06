@@ -14,7 +14,7 @@ ArrayList<String> fruits3 = new ArrayList<>(Arrays.asList("pineapple", "banana",
         System.out.println(containsApple(fruits1));
     }
     /**
-     * create a public static method which will take an arraylist then it will check it is
+     * create a public static method which will take an arraylist then it will check if it is
      * containing "apple".
      * NOTE: IGNORE CASES
      * Example:
@@ -24,7 +24,7 @@ ArrayList<String> fruits3 = new ArrayList<>(Arrays.asList("pineapple", "banana",
      */
     public static boolean containsApple(ArrayList<String> fruits){
         for (String fruit : fruits) {
-            if (fruit.toLowerCase().equalsIgnoreCase("apple")) return true;
+            if (fruit.equalsIgnoreCase("apple")) return true;
         }
         return false;
     }

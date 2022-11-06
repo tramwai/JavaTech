@@ -24,11 +24,12 @@ public class ArrayListPractice {
             if (numbers.get(i) == 2) numbers.set(i, 7);
         }
         System.out.println("2. " + numbers);
-        Iterator<Integer> numbersIterator = numbers.iterator();
-        while (numbersIterator.hasNext()){
-            Integer num = numbersIterator.next();
-            if (num % 2 == 0) numbersIterator.remove();
-        }
+        numbers.removeIf(x -> x % 2 == 0);
+//        Iterator<Integer> numbersIterator = numbers.iterator();
+//        while (numbersIterator.hasNext()){
+//            Integer num = numbersIterator.next();
+//            if (num % 2 == 0) numbersIterator.remove();
+//        }
         System.out.println("3. " + numbers);
 
         for (int i = 0; i < 3; i++) {

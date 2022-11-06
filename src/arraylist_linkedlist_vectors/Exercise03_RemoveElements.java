@@ -14,7 +14,7 @@ public class Exercise03_RemoveElements {
         languages.add("Python");
         languages.add("C++");
 
-        /*
+        /**
         TASK
         Remove all elements that starts with J and print the list
         EXPECTED:
@@ -38,6 +38,7 @@ public class Exercise03_RemoveElements {
 
         languages.removeIf(x -> !x.startsWith("C"));
         System.out.println(languages.size());
+        System.out.println(languages);
 
 
     }

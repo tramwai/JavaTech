@@ -5,7 +5,7 @@ import java.util.Vector;
 
 public class Exercise04_CountElements {
     public static void main(String[] args) {
-        /*
+        /**
         Count evens -> 3
         count odds -> 2
         count numbers that are more than 15 -> 3

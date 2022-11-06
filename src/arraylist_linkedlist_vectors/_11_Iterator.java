@@ -7,7 +7,7 @@ import java.util.Iterator;
 public class _11_Iterator {
     public static void main(String[] args) {
         ArrayList<String> food = new ArrayList<>(Arrays.asList("Pizza", "Pasta", "Burger", "Lamb Chops", "salad", "Sushi", "Falafel"));
-        /*
+        /**
         Remove the element that has 5 characters
         Print the list
         Expected: [Burger, Lamb chops, Falafel]
