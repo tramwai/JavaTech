@@ -152,6 +152,7 @@ Program: false
 
     public static boolean isDateFormatValid(String dateOfBirth){
         return Pattern.matches("(0[1-9]|1[0-2])\\/(0[1-9]|1[0-9]|2[0-9]|3[0-1])\\/((19|20)\\d\\d)",dateOfBirth);
+        // "([0][1-9]|[1][0-2])\/([0][1-9]|[12][0-9]|[3][0-1])\/(19[0-9]{2}|20[01][0-9]|202[0-2])"
 
     }
 
@@ -188,6 +189,7 @@ Program:false
         return Pattern.matches("[\\w\\d._-]{2,}@[\\w\\d]{2,}.[\\w\\d.].{2,}", email);
     }
 
+    // [\w.#$]{2,}@[\w.]{2,}\.[\w]{2,} - recap option
     // correct -> [a-zA-Z]{2,}@[a-zA-Z]{2,}.[a-zA-Z.].{2,}  -> includes letters only
     //         -> [\w]{2,}@[\w]{2,}.[\w.].{2,}              -> includes letters only
     //         -> [\w\d]{2,}@[\w\d]{2,}.[\w\d.].{2,}        -> includes letters,digits only

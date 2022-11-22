@@ -119,6 +119,7 @@ Expected output:
 
     // 2nd solution using regex
 //    public static boolean validatePassword(String password){
+   //  Password regex -> (?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!#$%_\-])[\S]{8,16}
 //        // regex string
 //        String regex ="^(?=.*[0-9])" +      // digit at least once
 //                      "(?=.*[a-z])" +       // lowerCase at least once
