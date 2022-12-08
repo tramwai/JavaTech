@@ -121,7 +121,6 @@ Expected Result 5: “TechGlobal”
     public static void checkAge(int yearOfBirth){
         // Get the current year
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
-
         // Calculate the age based on the year of birth
         int age = currentYear - yearOfBirth;
         System.out.println(age);
@@ -233,19 +232,37 @@ Expected Result 5: “TechGlobal”
     Expected Result 3:  5
      */
 
-    public static int countPrimes(int[] array){
-        int count = 0;
-        for (int element : array) {
-            if (element < 2) continue;
-            boolean isPrime = true;
-            for (int i = 2; i < element; i++) {
-                if (element % i == 0) isPrime = false;
-                break;
+    public static int countPrimes(int[] arr){
+        int nonPrimeNumbers = 0;
+        for (int num : arr) {
+            if (num < 2) {
+                nonPrimeNumbers++;
+                continue;
             }
-            if (isPrime) count++;
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) nonPrimeNumbers++;
+            }
         }
-        return count;
+        return arr.length - nonPrimeNumbers;
     }
+
+     // Alternative solution
+//    public static int countPrimes(int[] array){
+//        int count = 0;
+//        for (int element : array) {
+//            if (element < 2){
+//                count++;
+//                continue;
+//            }
+//            boolean isPrime = true;
+//            for (int i = 2; i < element; i++) {
+//                if (element % i == 0) isPrime = false;
+//                break;
+//            }
+//            if (isPrime) count++;
+//        }
+//        return count;
+//    }
 
     public static void main(String[] args) {
 

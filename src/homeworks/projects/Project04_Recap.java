@@ -1,12 +1,10 @@
 package homeworks.projects;
 
 import utilities.RandomNumberGenerator;
-import utilities.ScannerHelper;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Project04Recap {
+public class Project04_Recap {
     public static void main(String[] args) {
         System.out.println("Task 11");
         /**

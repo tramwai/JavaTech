@@ -2,7 +2,7 @@ package homeworks.projects;
 
 import java.util.Arrays;
 
-public class Project05Recap {
+public class Project05_Recap {
 
 
     /**

@@ -1,4 +1,4 @@
-package homeworks.projects;
+package homeworks;
 
 import utilities.ScannerHelper;
 

@@ -1,10 +1,8 @@
 package homeworks.projects;
 
-import netscape.javascript.JSUtil;
-
 import java.util.Scanner;
 
-public class Project01Recap {
+public class Project01_Recap {
     public static void main(String[] args) {
 
         char nameCharacter1 = 'J';

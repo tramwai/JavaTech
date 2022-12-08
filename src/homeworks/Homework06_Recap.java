@@ -1,4 +1,4 @@
-package homeworks.projects;
+package homeworks;
 
 import javax.swing.*;
 import java.util.Arrays;

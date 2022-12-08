@@ -71,7 +71,6 @@ public static int findClosestDistance(int[] array){
     public static int findSingleNumber(int[] array){
         // Sort the array in ascending order
         Arrays.sort(array);
-
         // Iterate through the array and return the element that does not have a matching element next to it
         for (int i = 0; i < array.length - 1; i += 2) {
             if (array[i] != array[i + 1]) {

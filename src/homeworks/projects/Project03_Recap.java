@@ -2,7 +2,7 @@ package homeworks.projects;
 
 import java.util.Random;
 
-public class Project03Recap {
+public class Project03_Recap {
     public static void main(String[] args) {
         System.out.println("========Task 1 ===========");
         /**
