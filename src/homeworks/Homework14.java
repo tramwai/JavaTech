@@ -1,5 +1,8 @@
 package homeworks;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Homework14 {
 
 
@@ -35,6 +38,14 @@ Fizz                    Fizz                    Fizz
 
      */
 
+    public static void fizzBuzz1(int givenNumber){
+        for(int i = 1; i <= givenNumber; i++){
+            if (i % 15 == 0) System.out.println("FizzBuzz");
+            else if (i % 3 == 0) System.out.println("Fizz");
+            else if (i % 5 == 0) System.out.println("Buzz");
+            else System.out.println(i);
+        }
+    }
 
     // Task 2
     /**
@@ -60,6 +71,13 @@ Test Data 5: 15
 Expected Result 5: FizzBuzz
      */
 
+    public static String fizzBuzz2(int number){
+        if (number % 15 == 0) return "FizzBuzz";
+        else if (number % 3 == 0) return "Fizz";
+        else if (number % 5 == 0) return "Buzz";
+        else return String.valueOf(number);
+    }
+
 // Task3
     /**
     Requirement:
@@ -73,7 +91,7 @@ Test Data 1: “abc$”
 Expected Result 1: 0
 
 Test Data 2: “a1b4c  6#”
-Expected Result 2: 11
+Expected Result 2: 6
 
 Test Data 3: “ab110c045d”
 Expected Result 3: 155
@@ -81,6 +99,16 @@ Expected Result 3: 155
 Test Data 4: “525”
 Expected Result 4: 525
      */
+
+    public static int findSumNumbers(String str){
+        ArrayList<String> listTask3 = new ArrayList<>(Arrays.asList(str.split("\\D+")));
+        int sum = 0;
+        for (String element : listTask3) {
+            if (!element.isEmpty()) sum += Integer.parseInt(element);
+        }
+        return sum;
+    }
+
 
     // Task 4
     /**
@@ -104,6 +132,18 @@ Expected Result 4: 525
 
      */
 
+    public static int findBiggestNumber(String text){
+        ArrayList<String> listTask4 = new ArrayList<>(Arrays.asList(text.split("\\D+")));
+        int max = Integer.MIN_VALUE;
+        if(listTask4.isEmpty()) return 0;
+        else{
+            for (String s : listTask4) {
+                if (!s.isEmpty() && Integer.parseInt(s) > max) max = Integer.parseInt(s);
+            }
+        }
+        return max;
+    }
+
     // Task 5
     /**
     Requirement:
@@ -126,4 +166,57 @@ Test Data 4: “aaAAa”
 Expected Result 4: “2a2A1a”
 
      */
+
+    public static String countSequenceOfCharacters(String strTask5) {
+        if (strTask5.isEmpty()) {
+            return "";
+        }
+        String result = "";
+        char[] chars = strTask5.toCharArray();
+        int count = 1;
+        for (int i = 0; i < chars.length; i++) {
+            if (i + 1 < chars.length && chars[i] == chars[i + 1]) {
+                count++;
+            } else {
+                result += count + "" + chars[i];
+                count = 1;
+            }
+        }
+        return result;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println("================Task 1==============");
+        fizzBuzz1(3);
+        System.out.println();
+       fizzBuzz1(5);
+        System.out.println();
+       fizzBuzz1(18);
+
+        System.out.println("================Task 2==============");
+        System.out.println(fizzBuzz2(0));
+        System.out.println(fizzBuzz2(1));
+        System.out.println(fizzBuzz2(3));
+        System.out.println(fizzBuzz2(5));
+        System.out.println(fizzBuzz2(15));
+
+        System.out.println("================Task 3==============");
+        System.out.println(findSumNumbers("abc$"));
+        System.out.println(findSumNumbers("a1b4c  6#"));
+        System.out.println(findSumNumbers("ab110c045d"));
+        System.out.println(findSumNumbers("525"));
+
+        System.out.println("================Task 4==============");
+        System.out.println(findBiggestNumber("abc$"));
+        System.out.println(findBiggestNumber("a1b4c  6#"));
+        System.out.println(findBiggestNumber("ab110c045d"));
+        System.out.println(findBiggestNumber("525"));
+
+        System.out.println("================Task 5==============");
+        System.out.println(countSequenceOfCharacters(""));
+        System.out.println(countSequenceOfCharacters("abc"));
+        System.out.println(countSequenceOfCharacters("abbcca"));
+        System.out.println(countSequenceOfCharacters("aaAAa"));
+    }
 }
