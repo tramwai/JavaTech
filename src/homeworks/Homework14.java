@@ -193,6 +193,7 @@ Expected Result 4: “2a2A1a”
        fizzBuzz1(5);
         System.out.println();
        fizzBuzz1(18);
+       fizzBuzz1(2);
 
 
 

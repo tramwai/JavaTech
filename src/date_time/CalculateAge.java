@@ -25,5 +25,7 @@ public class CalculateAge {
         System.out.println("Please enter year of birth");
         int yob = scanner.nextInt();
         System.out.println(LocalDate.now().getYear() - yob);
+
     }
+
 }
